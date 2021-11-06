@@ -38,7 +38,12 @@ echo 'clear
 figlet -f standard S H E E R I O
 echo "welcome back Mr sakith ragavan your system is ready now"' >> zshrc
 cd ~
-echo 'prompt_context(){}' >> .zshrc
+echo 'prompt_context() {
+  # Custom (Random emoji)
+  emojis=("⚡️" "🔥" "💀" "👑" "😎" "🐸" "🐵" "🦄" "🌈" "🍻" "🚀" "💡" "🎉" "🔑" "🇹🇭" "🚦" "🌙")
+  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+  prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
+}' >> .zshrc
 echo "warning this script can run only once runing this again may cause problems!"
 echo " "
 echo "Please restart the Termux app...."
