@@ -36,7 +36,9 @@ cd /data/data/com.termux/files/usr/etc
 
 echo 'clear
 figlet -f standard S H E E R I O
-echo "welcome back Mr sakith ragavan your system is ready now"' >> zshrc
+echo "welcome back Mr sakith ragavan your system is ready now"
+alias c = 'clear'
+alias q = 'exit'' >> zshrc
 cd ~
 echo 'prompt_context() {
   # Custom (Random emoji)
