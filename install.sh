@@ -58,5 +58,5 @@ echo "warning this script can run only once runing this again may cause problems
 echo " "
 echo "Please restart the Termux app...."
 mkdir $HOME/.termux/ ;echo "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]" >> $HOME/.termux/termux.properties
-echo "if you get an dependency error or warnings messages use ```compaudit | xargs chmod g-w,o-w''' "
+echo "if you get an dependency error or warnings messages use compaudit | xargs chmod g-w,o-w "
 exit
